@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+}
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -22,7 +25,23 @@ body {
   list-style: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /* Шапка */
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header {
+}
 .logo {
   color: var(--accent-color);
 
@@ -80,6 +99,12 @@ body {
 }
 
 .button {
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--primary-whiter-color);
   background-color: var(--accent-color);
   cursor: pointer;
